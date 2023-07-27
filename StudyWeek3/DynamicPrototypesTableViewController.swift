@@ -17,10 +17,8 @@ class DynamicPrototypesTableViewController: UITableViewController {
 
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return settingList.count
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
