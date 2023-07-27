@@ -13,6 +13,11 @@
 		53820EDA2A71FFF4001B7561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53820ED82A71FFF4001B7561 /* Main.storyboard */; };
 		53820EDC2A71FFF5001B7561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53820EDB2A71FFF5001B7561 /* Assets.xcassets */; };
 		53820EDF2A71FFF5001B7561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53820EDD2A71FFF5001B7561 /* LaunchScreen.storyboard */; };
+		53820EE72A721002001B7561 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53820EE62A721002001B7561 /* TodoTableViewController.swift */; };
+		53820EE92A7232DF001B7561 /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53820EE82A7232DF001B7561 /* StudyTableViewController.swift */; };
+		53820EEB2A724974001B7561 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53820EEA2A724974001B7561 /* Extension.swift */; };
+		53820EED2A724C9E001B7561 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53820EEC2A724C9E001B7561 /* Setting.storyboard */; };
+		53820EEF2A725256001B7561 /* DynamicPrototypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53820EEE2A725256001B7561 /* DynamicPrototypesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		53820EDB2A71FFF5001B7561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53820EDE2A71FFF5001B7561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53820EE02A71FFF5001B7561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53820EE62A721002001B7561 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		53820EE82A7232DF001B7561 /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
+		53820EEA2A724974001B7561 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		53820EEC2A724C9E001B7561 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		53820EEE2A725256001B7561 /* DynamicPrototypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicPrototypesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				53820ED42A71FFF4001B7561 /* SceneDelegate.swift */,
 				53820ED62A71FFF4001B7561 /* ViewController.swift */,
 				53820ED82A71FFF4001B7561 /* Main.storyboard */,
+				53820EEA2A724974001B7561 /* Extension.swift */,
+				53820EE62A721002001B7561 /* TodoTableViewController.swift */,
+				53820EEC2A724C9E001B7561 /* Setting.storyboard */,
+				53820EEE2A725256001B7561 /* DynamicPrototypesTableViewController.swift */,
+				53820EE82A7232DF001B7561 /* StudyTableViewController.swift */,
 				53820EDB2A71FFF5001B7561 /* Assets.xcassets */,
 				53820EDD2A71FFF5001B7561 /* LaunchScreen.storyboard */,
 				53820EE02A71FFF5001B7561 /* Info.plist */,
@@ -128,6 +143,7 @@
 				53820EDF2A71FFF5001B7561 /* LaunchScreen.storyboard in Resources */,
 				53820EDC2A71FFF5001B7561 /* Assets.xcassets in Resources */,
 				53820EDA2A71FFF4001B7561 /* Main.storyboard in Resources */,
+				53820EED2A724C9E001B7561 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				53820ED72A71FFF4001B7561 /* ViewController.swift in Sources */,
+				53820EEF2A725256001B7561 /* DynamicPrototypesTableViewController.swift in Sources */,
+				53820EE72A721002001B7561 /* TodoTableViewController.swift in Sources */,
+				53820EE92A7232DF001B7561 /* StudyTableViewController.swift in Sources */,
+				53820EEB2A724974001B7561 /* Extension.swift in Sources */,
 				53820ED32A71FFF4001B7561 /* AppDelegate.swift in Sources */,
 				53820ED52A71FFF4001B7561 /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +322,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dahye.StudyWeek3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +353,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dahye.StudyWeek3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
