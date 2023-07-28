@@ -228,15 +228,17 @@
         <scene sceneID="9Mz-ZX-yxz">
             <objects>
                 <tableViewController id="2bN-xp-xph" customClass="ShoppingTableViewController" customModule="StudyWeek3" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="cSx-Bq-6NH">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="cSx-Bq-6NH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="sMV-eU-2pM">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="87"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="61"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="무엇을 구매하실 건가요?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qGG-Z5-gap">
-                                    <rect key="frame" x="8" y="26" width="294" height="34"/>
+                                    <rect key="frame" x="8" y="13" width="294" height="34"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -245,8 +247,9 @@
                                     </connections>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asP-6a-72T">
-                                    <rect key="frame" x="323" y="26" width="54" height="35"/>
+                                    <rect key="frame" x="310" y="0.0" width="83" height="61"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="추가"/>
                                     <connections>
@@ -258,14 +261,14 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="shoppingCell" textLabel="x1K-3w-Rmx" imageView="ZZD-aS-Mmx" style="IBUITableViewCellStyleDefault" id="QCA-bc-OO6">
-                                <rect key="frame" x="20" y="142.33333206176758" width="353" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="116.33333206176758" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QCA-bc-OO6" id="97Y-hE-fRO">
-                                    <rect key="frame" x="0.0" y="0.0" width="309" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="349" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x1K-3w-Rmx">
-                                            <rect key="frame" x="59" y="0.0" width="242" height="43.666667938232422"/>
+                                            <rect key="frame" x="59" y="0.0" width="282" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
@@ -283,6 +286,7 @@
                         <connections>
                             <outlet property="dataSource" destination="2bN-xp-xph" id="9L2-I9-Zbd"/>
                             <outlet property="delegate" destination="2bN-xp-xph" id="RCW-yD-Vjc"/>
+                            <outletCollection property="gestureRecognizers" destination="R0I-zg-Zi4" appends="YES" id="8c2-Yq-4Ot"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="쇼핑" id="tFT-LY-7fk"/>
@@ -292,6 +296,11 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="az2-QD-956" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="R0I-zg-Zi4">
+                    <connections>
+                        <action selector="backgroundDidTap:" destination="2bN-xp-xph" id="3eb-h0-sag"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1496.9465648854962" y="1424.6478873239437"/>
         </scene>

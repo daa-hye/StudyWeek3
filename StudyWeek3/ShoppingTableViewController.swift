@@ -17,12 +17,13 @@ class ShoppingTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.rowHeight = 60
     }
 
     @IBAction func addButtonDidTap(_ sender: UIButton) {
         guard let stuff = addTextField.text else { return }
         shoppingList.append(stuff)
+        addTextField.text = ""
         addTextField.endEditing(true)
         tableView.reloadData()
     }
@@ -30,6 +31,11 @@ class ShoppingTableViewController: UITableViewController {
     @IBAction func keyboardReturnDidTap(_ sender: UITextField) {
         addButtonDidTap(addButton)
     }
+
+    @IBAction func backgroundDidTap(_ sender: UITapGestureRecognizer) {
+        addTextField.endEditing(true)
+    }
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return shoppingList.count

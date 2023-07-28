@@ -23,7 +23,7 @@ class TodoTableViewController: UITableViewController {
 
     @IBAction func addButtonClicked(_ sender: UIBarButtonItem) {
 
-        showAlert()
+        //showAlert()
         
         //1. list에 요소 추가
         list.append("고래밥 먹기")
