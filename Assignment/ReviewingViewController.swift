@@ -30,6 +30,15 @@ class ReviewingViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        buyigList.list.remove(at: indexPath.row)
+        tableView.reloadData()
+    }
+
     @IBAction func addButtonDidTap(_ sender: UIButton) {
         if let inputText = inputTextField.text, inputText != "" {
             buyigList.list.append(Buying(check: false, stuff: inputText, like: false))

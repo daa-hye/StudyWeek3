@@ -22,8 +22,8 @@ class MovieTableViewCell: UITableViewCell {
     func configuration(_ row: Movie) {
         movieTitleLabel.text = row.title
         releaseDateLabel.text = row.releaseDate
-        runtimeLabel.text = "\(row.runtime)"
-        rateLabel.text = "\(row.rate)"
+        runtimeLabel.text = "\(row.runtime)분"
+        rateLabel.text = "\(row.rate)점"
         overviewLabel.text = row.overview
         posterImageView.image = UIImage(named: "\(row.title)")
     }
