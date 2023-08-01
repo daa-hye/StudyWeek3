@@ -21,6 +21,7 @@
 		53820EF12A727FD4001B7561 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53820EF02A727FD4001B7561 /* ShoppingTableViewController.swift */; };
 		53820EF32A735046001B7561 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53820EF22A735046001B7561 /* CustomTableViewController.swift */; };
 		53820EF52A735289001B7561 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53820EF42A735289001B7561 /* CustomTableViewCell.swift */; };
+		539E9E0E2A7939CF005521D1 /* SettingEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E9E0D2A7939CF005521D1 /* SettingEnum.swift */; };
 		53D779692A77E66C00DEAE1A /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D779682A77E66C00DEAE1A /* MovieInfo.swift */; };
 		53D87FA32A7389C500B388D1 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D87FA22A7389C500B388D1 /* ToDo.swift */; };
 		53D87FA52A738A1E00B388D1 /* ToDoInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D87FA42A738A1E00B388D1 /* ToDoInformation.swift */; };
@@ -51,6 +52,7 @@
 		53820EF02A727FD4001B7561 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
 		53820EF22A735046001B7561 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		53820EF42A735289001B7561 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		539E9E0D2A7939CF005521D1 /* SettingEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingEnum.swift; sourceTree = "<group>"; };
 		53D779682A77E66C00DEAE1A /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		53D87FA22A7389C500B388D1 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		53D87FA42A738A1E00B388D1 /* ToDoInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInformation.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				53820EEC2A724C9E001B7561 /* Setting.storyboard */,
 				53820EF02A727FD4001B7561 /* ShoppingTableViewController.swift */,
 				53820EEE2A725256001B7561 /* DynamicPrototypesTableViewController.swift */,
+				539E9E0D2A7939CF005521D1 /* SettingEnum.swift */,
 				53820EE82A7232DF001B7561 /* StudyTableViewController.swift */,
 				53820EDB2A71FFF5001B7561 /* Assets.xcassets */,
 				53820EDD2A71FFF5001B7561 /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 			files = (
 				53D87FAC2A73DCFA00B388D1 /* Movie.swift in Sources */,
 				53820ED72A71FFF4001B7561 /* ViewController.swift in Sources */,
+				539E9E0E2A7939CF005521D1 /* SettingEnum.swift in Sources */,
 				53820EF12A727FD4001B7561 /* ShoppingTableViewController.swift in Sources */,
 				53820EEF2A725256001B7561 /* DynamicPrototypesTableViewController.swift in Sources */,
 				53D87FA32A7389C500B388D1 /* ToDo.swift in Sources */,
